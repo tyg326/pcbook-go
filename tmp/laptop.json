@@ -1,0 +1,62 @@
+{
+  "id":  "e9ff9b65-9dc3-40f9-98ba-2a0f75deafdc",
+  "brand":  "Lenovo",
+  "name":  "Thinkpad P53",
+  "cpu":  {
+    "brand":  "AMD",
+    "name":  "Ryzen 5 PRO 3500U",
+    "numberCores":  6,
+    "numberThreads":  7,
+    "minGhz":  2.4656336,
+    "maxGhz":  3.6350589
+  },
+  "ram":  {
+    "value":  "29",
+    "unit":  "GIGABYTE"
+  },
+  "gpus":  [
+    {
+      "brand":  "NVIDA",
+      "name":  "RTX 2070",
+      "minGhz":  1.2735946719888571,
+      "maxGhz":  1.3670372640001311,
+      "memory":  {
+        "value":  "4",
+        "unit":  "GIGABYTE"
+      }
+    }
+  ],
+  "storages":  [
+    {
+      "driver":  "SSD",
+      "memory":  {
+        "value":  "421",
+        "unit":  "GIGABYTE"
+      }
+    },
+    {
+      "driver":  "HDD",
+      "memory":  {
+        "value":  "4",
+        "unit":  "TERABYTE"
+      }
+    }
+  ],
+  "screen":  {
+    "sizeInch":  15.640802,
+    "resolution":  {
+      "width":  4375,
+      "height":  2461
+    },
+    "panel":  "IPS",
+    "multitouch":  true
+  },
+  "keyboard":  {
+    "layout":  "QWERTZ",
+    "backlit":  true
+  },
+  "weightKg":  1.836554718665294,
+  "priceUsd":  2755.713534816351,
+  "releaseYear":  2016,
+  "updatedAt":  "2023-04-22T17:09:24.834654200Z"
+}
