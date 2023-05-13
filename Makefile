@@ -13,8 +13,14 @@ gen:
 clean:
 	del pb\*.go
 
-run:
-	go run main.go
+# run:
+# 	go run main.go
+
+server:
+	go run cmd/server/main.go --port 18080
+
+client:
+	go run cmd/client/main.go --address 0.0.0.0:18080
 
 test:
 	go test -cover -race ./...
