@@ -31,8 +31,8 @@ func NewCPU() *pb.CPU {
 		Name:          name,
 		NumberCores:   uint32(numberCores),
 		NumberThreads: uint32(numberThreads),
-		MinGhz:        float32(minGhz),
-		MaxGhz:        float32(maxGhz),
+		MinGhz:        float64(minGhz),
+		MaxGhz:        float64(maxGhz),
 	}
 
 	return cpu
