@@ -4,6 +4,7 @@ import (
 	"context"
 	"flag"
 	"log"
+	"time"
 
 	"gitlab.com/techschool/pcbook/pb"
 	"gitlab.com/techschool/pcbook/sample"
@@ -31,7 +32,14 @@ func main() {
 		Laptop: laptop,
 	}
 
-	res, err := laptopClient.CreateLaptop(context.Background(), req)
+	// res, err := laptopClient.CreateLaptop(context.Background(), req)
+	// 添加 timeout 上下文超时
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	// 结束后取消
+	defer cancel()
+
+	res, err := laptopClient.CreateLaptop(ctx, req)
+
 	if err != nil {
 		st, ok := status.FromError(err)
 		if ok && st.Code() == codes.AlreadyExists {
